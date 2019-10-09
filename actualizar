@@ -1,0 +1,4 @@
+find ./ -name "*.class" -type f -delete
+git add . --all
+git commit -m "actualizacion"
+git push origin master

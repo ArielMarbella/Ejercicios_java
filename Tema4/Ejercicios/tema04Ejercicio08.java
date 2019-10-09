@@ -17,19 +17,19 @@ public class tema04Ejercicio08{
     
     if(media<5){
       System.out.print("insuficiente");
-      }
+      }else{
       if(media>=5){
       System.out.print("suficiente");
-      }
+      }else
       if(media>=6){
       System.out.print("Bien");
-      }
+      }else
       if(media>=7){
       System.out.print("Notable");
-      }
+      }else
       if(media>=8){
       System.out.print("Sobresaliente");
       }
     
-  }
+  } }}}}
 }
