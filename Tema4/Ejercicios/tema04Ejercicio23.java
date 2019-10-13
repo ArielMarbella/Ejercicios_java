@@ -53,7 +53,7 @@ public class tema04Ejercicio23 {
     double IvaAplicado = bImp * (iva / 100);
     double precioSinDescuento = bImp * iva;
     
-    //sacamos los descuentos
+    //sacamos los descuento
     double desc = 0;
     
     switch(cod){
