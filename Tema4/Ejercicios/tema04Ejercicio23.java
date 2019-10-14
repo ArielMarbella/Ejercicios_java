@@ -25,7 +25,7 @@
 
 public class tema04Ejercicio23 {
 	
-	public static void main (String args[]) {
+	public static void main (String[] args){
     
    System.out.println("introduce el precio sin IVA ");
    double bImp = Double.parseDouble(System.console().readLine());
@@ -50,7 +50,7 @@ public class tema04Ejercicio23 {
      default:
        System.out.println("el iva introducido no es correcto empieza de nuevo");
     }
-    double IvaAplicado = bImp * (iva / 100);
+    double IvaAplicado = bImp * 0.05;
     double precioSinDescuento = bImp * iva;
     
     //sacamos los descuento
@@ -72,11 +72,12 @@ public class tema04Ejercicio23 {
        System.out.println("El código promocional introducido no es correcto.");
     }
     double total = precioSinDescuento - desc;
-    System.out.printf(" Base imponible          %6.f\n", bImp);
-    System.out.printf("IVA (%2d%%)               %6.2f\n,", iva, IvaAplicado);
+    
+    System.out.printf(" Base imponible          %6.2f\n", bImp);
+    System.out.printf("IVA (%2d%%)               %6.2f\n", iva, IvaAplicado);
     System.out.printf("Precio con IVA            %6.2f\n", precioSinDescuento);
     System.out.printf("Cod. promo. (%5s)         -%6.2f\n", cod, desc);
-    System.out.printf("TOTAL                      %6.2d\n", total);    
+    System.out.printf("TOTAL                      %6.2f\n", total);    
     
 		
 	}
