@@ -23,7 +23,7 @@ public class tema04Ejercicio25 {
     System.out.println("introduce el largo de la bandera");
     largoBandera = Integer.parseInt(System.console().readLine());
     System.out.println("¿Quieres con escudo? (si/no)");
-    escudo = System.console().readLine();
+    escudo = System.console().readLine(); 
        
     areaBandera = anchoBandera * largoBandera;
     precioBase = areaBandera*precioPorCm2;
