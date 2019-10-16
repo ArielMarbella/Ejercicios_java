@@ -50,7 +50,8 @@ public class tema04Ejercicio23 {
      default:
        System.out.println("el iva introducido no es correcto empieza de nuevo");
     }
-    double IvaAplicado = bImp * 0.05;
+    double IvaAplicado 
+    = bImp * 0.05;
     double precioSinDescuento = bImp * iva;
     
     //sacamos los descuento
