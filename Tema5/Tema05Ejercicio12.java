@@ -12,23 +12,33 @@
 public class Tema05Ejercicio12 {
 	
 	public static void main (String args[]) {
-    int numero=0; 
-    int numero2=numero;
-    int fin; 
     
-      System.out.println("Introduce un numero y se te dará la secuencia de Fibonacci"); 
-      numero = Integer.parseInt(System.console().readLine());
-      for (fin=0; fin<6;fin++) {
-        if (numero==0) {
-          numero++;
-          System.out.printf(" %d- " , numero);
-        }
-        else {
-          numero+=numero2;
-          numero2+=numero;
-            System.out.printf("-%d-" , numero);
-            System.out.printf("%d" , numero2);
-        }
-      }
-	}
+    System.out.println("Introduce un numero y se te dará la secuencia fibonacci hasta el número que elijas");
+    int n=Integer.parseInt(System.console().readLine());
+    
+    //declaro y doy valor a las variables
+    int a=0;
+    int b=1;
+    int c;
+    
+    //imprimo los números iniciales de la serie, con sus espacios
+    System.out.print(a + "\t" + b +"\t");
+    
+    //inicio el cucle
+    for(int i =2; i<n;i++){
+      
+    //en una variable guardo la suma de los dos números    
+      c = a+b;
+      //la imprimo
+    System.out.print(c +"\t");
+    /*y ahora le digo que en la siguiente vuelta del bucle le digo que coja com ael segundo numero y
+     * como b el resultado de la suma. al iterar el bucle el valor de la c habrá cambiado en el sentido que queremos*/
+      a=b;
+      b=c;
+      
+      
+     
+    }
+  }
 }
+      
