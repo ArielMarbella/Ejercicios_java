@@ -8,29 +8,16 @@
 
 public class Tema05Ejercicio15 { 
   public static void main(String[] args) {
-    System.out.println("este programa calcula todas las potencias de un número real elevado al número que elijas");
-    System.out.println("introduce la base conun número real");
+    System.out.println("vas a elegir la base y el exponente de un número y calcularemos todas sus potencias");
+    System.out.println("introduce un número real como base");
     double base = Double.parseDouble(System.console().readLine());
-    System.out.println("introduce el exponente com un entero");
-    int exponenteFinal = Integer.parseInt(System.console().readLine());
-    
-    double potencia;
-    int exponente;
-    
-    for(int i = 1;i<=exponenteFinal;i++){
-      
-       potencia = 1;
-       exponente = i;
-       
-       for(int j = 1; j<=exponente;j++){
-         potencia = potencia*base;
-         }
-         System.out.println(base + "^" + i + " = " + potencia);
+    System.out.println("Escribe el entero positivo para el exponente");
+    int exponente = Integer.parseInt(System.console().readLine());
 
-    }
-    
-    
-
+     for(int i = 0; i<exponente;i++){
+       System.out.println(" "+base);
+       base = base*base;
+       }
     
   }
 }
