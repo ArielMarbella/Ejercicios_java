@@ -10,28 +10,29 @@ public class Tema05Ejercicio19 {
 	
 	public static void main (String args[]) {
      
-    int alturaIntroducida;
-    String caracter;
-    
-    System.out.print("Introduzca altura: ");
-    alturaIntroducida = Integer.parseInt(System.console().readLine());
-
-    System.out.print("Introduzca caracter: ");
-    caracter = System.console().readLine();
-    
-    for (int fila=0; fila<alturaIntroducida; fila++) {
-      
-      for (int i=0; i<alturaIntroducida-fila; i++) {
-        System.out.print(" ");
+  
+  System.out.println("Este programa pinta pirámides");
+  System.out.println("Indica el número de alturas que quieres");
+  int alturaPiramide = Integer.parseInt(System.console().readLine());
+  System.out.println("Indica que carácter quieres la pirámide");
+  String caracterIntroducido = System.console().readLine();
+  int espacio = alturaPiramide -1;
+  int anchoCaracteres= 1;
+  
+    for(int fila=0;fila <alturaPiramide;fila++){
+      for(int i=0; i<espacio;i++){
+         System.out.print(" ");
       }
-      
-      for (int i=alturaIntroducida-fila; i<=alturaIntroducia; i++) {
-        System.out.printf("%s ", caracter);
+      for(int i=0; i<anchoCaracteres;i++){
+        System.out.print(caracterIntroducido);
       }
-            
-      System.out.printf("\n");
-    
+      System.out.println();
+      anchoCaracteres+=2;
+      espacio--;
+      
     }
+
+  
   }
 }
 
