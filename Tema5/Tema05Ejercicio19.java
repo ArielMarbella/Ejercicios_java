@@ -14,7 +14,7 @@ public class Tema05Ejercicio19 {
   System.out.println("Este programa pinta pirámides");
   System.out.println("Indica el número de alturas que quieres");
   int alturaPiramide = Integer.parseInt(System.console().readLine());
-  System.out.println("Indica que carácter quieres la pirámide");
+  System.out.println("Indica que carácter quieres la  pirámide");
   String caracterIntroducido = System.console().readLine();
   int espacio = alturaPiramide -1;
   int anchoCaracteres= 1;

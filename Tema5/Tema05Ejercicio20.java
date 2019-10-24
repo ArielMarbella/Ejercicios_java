@@ -22,7 +22,7 @@ public class Tema05Ejercicio20 {
        anchoCaracteres+=2;
       System.out.println("*");
   
-    for(int fila=2;fila <alturaPiramide;fila++){
+    for(int fila=2--;fila <alturaPiramide;fila++){
       for(int i=0; i<espacio;i++){
          System.out.print(" ");
       }
