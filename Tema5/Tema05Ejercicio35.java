@@ -8,7 +8,8 @@ igual a 3, en caso contrario se debe mostrar un mensaje de error.
 public class Tema05Ejercicio35 {
 	
 	public static void main (String args[]) {
-	int alturaIntroducida;
+    
+	  int alturaIntroducida;
     int altura = 1;
     int espaciosDentro;
     int espaciosAntes;
