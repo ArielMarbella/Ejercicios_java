@@ -35,7 +35,9 @@ public class Tema05Ejercicio40 {
 	
 	condicion =false;
       }
+    } while(condicion == false);
     
+    System.out.println();
     
     // Pinta la parte de arriba del rombo
     espaciosExternos = alturaIntro / 2;
@@ -96,6 +98,6 @@ public class Tema05Ejercicio40 {
       espaciosInternos -= 2;
     }
    
-  
+  }
 }
 		
