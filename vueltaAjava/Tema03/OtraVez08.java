@@ -8,7 +8,7 @@ public class OtraVez08{
     System.out.println("Escribe las horas trabajadas");
     horasTrabajadas = Integer.parseInt(System.console().readLine());
     
-    System.out.println("tu salario es: " + (horasTrabajadas*12) + " euros");
+    System.out.println("tu salario es: " + (horasTrabajadas*12) + "");
 
   }
 }
