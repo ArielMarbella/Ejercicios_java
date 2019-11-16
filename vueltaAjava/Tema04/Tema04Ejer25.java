@@ -20,13 +20,13 @@ public class Tema04Ejer25{
     double precioSines= 0;
     double precio = (0.01 * cmCuadrado);
     double gastosEnvio= 3.50;
-    double precioBandera = (((precio + precioEscudo) + gastosEnvio));
+    
     double precioCentimetro = 0.01;
     
     
     
     System.out.println("Quieres tu superbandera española con escudo? si/no\n");
-    String escudo=System.console().readLine();
+    String escudo=System.console().readLine().toLowerCase();
     
     if (escudo.equals("si")){
     precioEscudo= 2.50;
@@ -34,17 +34,21 @@ public class Tema04Ejer25{
     if (escudo.equals("no")){
     precioEscudo=0;
     }
+    double precioBandera = ((precio + precioEscudo+ gastosEnvio));
     System.out.println("\nGracias por comprar tu españolísima bandera\n");
     System.out.println("-----------------------------------------------------------------------");
     System.out.printf("El ancho de tu bandera es                         %12.2f"+" cms\n",ancho);
     System.out.printf("El largo de tu bandera es                         %12.2f"+" cms\n",largo);
     System.out.printf("los centímetros cuadrados de tu bandera son:      %10.2f"+" cms^2\n",cmCuadrado);
     System.out.printf("El precio del centímetro cuadrado es:             %10.2f"+" euros\n",precioCentimetro);
+    System.out.printf("El precio sin escudo y gastos de envío es:        %10.2f"+" euros\n",precio);
+    System.out.printf("¿Tienes escudo en tu bandera?                     %10s\n",escudo);
     System.out.printf("El precio de tu escudo es:                        %10.2f"+" euros\n",precioEscudo);
     System.out.printf("El gasto de envío es:                             %10.2f"+" euros\n",gastosEnvio);
     System.out.println("-----------------------------------------------------------------------");
     System.out.println(" ");
     System.out.printf("El precio de tu flamante bandera es:              %10.2f"+" euros\n",precioBandera);
+
     
     
     
