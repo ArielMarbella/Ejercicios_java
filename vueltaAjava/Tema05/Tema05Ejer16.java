@@ -12,10 +12,15 @@ public class Tema05Ejer16{
     for(int i=2;i<n;i++){
       if((n%i)==0){
         esPrimo= false;
+        System.out.println(i);
+        
       }
+      System.out.println((n%i)!=0);
     }
     if(esPrimo){
       System.out.println("es priomo");
+      
+      
     } else{
       System.out.println("NO es priomo");
       }

@@ -28,12 +28,12 @@ System.out.print("0 1");
 int f1 = 0;
 int f2 = 1;
 int aux;
-while(n > 10) {
+while(n > 2) {
 aux = f1;
 f1 = f2;
 f2 = aux + f2;
 System.out.print(" " + f2);
-n++;
+n--;
 }
 }
 System.out.println();
