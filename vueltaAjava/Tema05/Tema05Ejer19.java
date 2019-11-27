@@ -26,7 +26,7 @@ public class Tema05Ejer19 {
         
         //pinto espacios
         for(int i=0; i<espacioBlanco;i++){
-          System.out.print("-");
+          System.out.println("-");
         }
          //pinto caracteres
          
@@ -38,6 +38,5 @@ public class Tema05Ejer19 {
         System.out.println();
         espacioBlanco-=1;
         ancho+=2;
-        
       }
     }}

@@ -19,11 +19,11 @@ public class Tema05Ejer22 {
     esPrimo = false;
 }
 }
-// si n es primo, se muestra por pantalla
-if (esPrimo) {
-System.out.print(n + " ");
-}
-}
-System.out.println();
-}
+   // si n es primo, se muestra por pantalla
+  if (esPrimo) {
+  System.out.print(n + " ");
+  }
+ } 
+  System.out.println();
+  }
 }
