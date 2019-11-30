@@ -14,3 +14,4 @@ public class tema05Ejer25{
     System.out.println("el número " + n + "dado la vuelta es " + girado);
   }
 }
+ 
