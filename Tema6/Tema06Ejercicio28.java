@@ -1,19 +1,19 @@
 /*
-28
-Realiza un programa que sea capaz de recolocar los números de un array de
-fuera hacia adentro. En primer lugar, el programa pedirá al usuario el tamaño
-del array. A continuación generará un array con ese tamaño con números
-enteros aleatorios entre 0 y 200 ambos incluidos. Seguidamente el programa
-irá colocando desde fuera hacia adentro los números de tal forma que el
-primero se coloca en la primera posición, el segundo en la última, el tercero
-en la segunda, el cuarto en la penúltima, el quinto en la tercera, en sexto en la
-antepenúltima, etc. Se
+29
+Realiza un programa que muestre la previsión del tiempo para mañana en
+Málaga. Las temperaturas máxima y mínima se deben generar de forma
+aleatoria entre los intervalos máximos y mínimos absolutos medidos en las
+últimas décadas para cada estación. La probabilidad de que esté soleado
+o nublado en cada estación se proporciona a continuación. Obviamente, la
+temperatura mínima deberá ser menor o igual que la temperatura máxima.
  */
 
 
 public class Tema06Ejercicio28 {
 	
 	public static void main (String args[]) {
+    
+    
 		
 	}
 }

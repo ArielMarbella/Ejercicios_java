@@ -1,24 +1,6 @@
 /*
- * Ejlibro2b.java
- * 
- * Copyright 2019 Linux User <tux@slitaz>
- * 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- * 
- * 
+En el siguiente ejemplo se muestra un array de números de tipo double que almacena
+notas de alumnos.
  */
 
 
@@ -26,6 +8,28 @@ public class Ejlibro2b {
 	
 	public static void main (String args[]) {
 		
+    double[] nota=new double[4];
+    double suma=0;
+    
+    System.out.println("introduce las notas:\n");
+    
+    for(int i=0;i<4;i++){
+      System.out.println("Introduce la nota del exámen número "+(i+1)+" y pulsa enter"+" :\n");
+      nota[i]= Double.parseDouble(System.console().readLine());
+      if(i==2){
+        
+        System.out.println("INTRODUCE ESTA ÚLTIMA NOTA, DALE AL ENTER Y TE DAREMOS LA MEDIA");
+      
+      }
+    }
+    System.out.println("tus notas son: ");
+    
+    for(int i=0;i<4;i++){
+      System.out.print(nota[i] +" ");
+      suma= suma+nota[i];
+    }
+    
+    System.out.println ("tu media es:  " + (suma/4));
 	}
 }
 
