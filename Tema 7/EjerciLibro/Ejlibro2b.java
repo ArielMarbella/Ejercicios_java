@@ -1,5 +1,5 @@
 /*
- * ejerLib5.java
+ * Ejlibro2b.java
  * 
  * Copyright 2019 Linux User <tux@slitaz>
  * 
@@ -22,27 +22,10 @@
  */
 
 
-public class ejerLib6 {
+public class Ejlibro2b {
 	
 	public static void main (String args[]) {
-    
-    System.out.println("generación de piedra papel o tijera");
-    
-    int mano=((int)Math.random()*3);
-    
-    switch(mano){
-      case 0:
-      System.out.println("piedra");
-      break;
-      case 1:
-      System.out.println("papel");
-      break;
-      case 2:
-      System.out.println("tijera");
-      break;
-      default:
-      
-      }
+		
 	}
 }
 

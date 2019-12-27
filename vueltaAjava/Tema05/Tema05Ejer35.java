@@ -33,7 +33,7 @@ public class Tema05Ejer35 {
           System.out.print("*");
           
         //espacio interno
-        for(int i=1;i<espaciosInternos;i++);{
+        for(int i=1;i<espaciosInternos;i++){
           System.out.print(" ");
         }
         //ponemos segundo asterisco

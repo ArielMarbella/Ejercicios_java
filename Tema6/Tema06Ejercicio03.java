@@ -1,53 +1,61 @@
 /*
-Igual que el ejercicio anterior pero con la baraja española. Se utilizará la baraja de
+  3. Igual que el ejercicio anterior pero con la baraja española. Se utilizará la baraja de
 * 48 cartas: 2, 3, 4, 5, 6, 7, 8, 9, sota, caballo, rey y as.
-
  */
 
 
 public class Tema06Ejercicio03 {
 	
 	public static void main (String args[]) {
+		
+    String palo="";
+    String carta="";
     
-    int numeroCarta = (int)(Math.random()*12)+1;
+    int numeroCarta;
+    int nombrePalo;
     
-    if((numeroCarta>1)&&(numeroCarta<10)){
-      System.out.println(numeroCarta);
-      } else {
+    nombrePalo = (int)(Math.random()*4)+1;
+    numeroCarta= (int)(Math.random()*12)+1;
+    
+    switch (nombrePalo){
       
-      switch (numeroCarta){
-          case 1:
-            System.out.println("As" );
-            break;
-          case 10:
-            System.out.println("J" );
-            break;
-          case 11:
-            System.out.println("Q" );
-            break;
-          case 12:
-            System.out.println("K" );
-            break;
-        }
-       } 
-        System.out.print( "de " );
-    
-    int numeroPalo=(int)(Math.random()*4)+1;
-      switch(numeroPalo){
+      case 1:
+      palo="oros";
+      break;
+      case 2:
+      palo="bastos";
+      break;
+      
+      case 3:
+      palo="copas";
+      break;
+      
+      case 4:
+      palo="espadas";
+      break;
+      default:
+      }
+      
+      switch(numeroCarta){
+        
         case 1:
-          System.out.println("bastos " );
-          break;
-        case 2:
-          System.out.println("copas " );
-          break;
-        case 3:
-          System.out.println("espadas " );
-          break;
-        case 4:
-          System.out.println("oros " );
-          break;
-
+        carta="as";
+        break;
+        case 10:
+        carta="sota";
+        break;
+        case 11:
+        carta="caballo";
+        break;
+        case 12:
+        carta="rey";
+        break;
+        default:
+        carta=String.valueOf(numeroCarta);
+        
         }
+        
+        System.out.println("es un " + carta + " de "  + palo);
 	}
 }
 

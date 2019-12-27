@@ -1,13 +1,18 @@
-public class ejerLib3{
-  public static void main (String[] args){
-  System.out.println("escribe 20 números aleatorios entre 0 y 9 sin decimales");
-    
-    for(int i = 0; i<20;i++){
-      System.out.print((int)(Math.random()*10)+ " ");
-       System.out.println();
-      }
-     
-       System.out.println();
+/*
+ * ejerLib3.java
 
-  }
+ */
+
+
+public class ejerLib3 {
+	
+	public static void main (String args[]) {
+    System.out.println("printear 10 enteros sin decimales");
+    int i=0;
+    for(i=0;i<10;i++){
+      System.out.println((int)(Math.random()*10));
+      }
+		
+	}
 }
+
