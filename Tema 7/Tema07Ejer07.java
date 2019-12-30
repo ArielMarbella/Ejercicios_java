@@ -16,7 +16,7 @@ public class Tema07Ejer07 {
      for(int i=0;i<100;i++){
         
         n[i]=(int)(Math.random()*21);
-        System.out.print(n[i] + "");
+        System.out.print(+n[i]+"-");
       }
 		
 	}
