@@ -13,8 +13,8 @@ public class Tema07Ejer10 {
 	public static void main (String args[]) {
     
     int[]n=new int[20];
-    int[]par=new int[20];
-    int[]impar=new int[20];
+    int[]par=new int[10];
+    int[]impar=new int[10];
     int pares=0;
     int impares=0;
     
