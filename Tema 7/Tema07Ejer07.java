@@ -8,17 +8,35 @@
 
 
 public class Tema07Ejer07 {
-	
-	public static void main (String args[]) {
+
+  public static void main(String[] args) {
+    int valor1;
+    int valor2;
+    int[]n=new int[100];
     
-     int[]n=new int[100];
-     
-     for(int i=0;i<100;i++){
-        
-        n[i]=(int)(Math.random()*21);
-        System.out.print(+n[i]+"-");
-      }
-		
+    for(int i=0;i<100;i++){
+      n[i]=(int)(Math.random()*21);
+      System.out.print(" "+n[i]);
+    
+    }
+
+    System.out.println("busca un número por el que cambiar");
+    valor1=Integer.parseInt(System.console().readLine());
+    
+    System.out.println("Di ahora por que número sustituirlo");
+    valor2=Integer.parseInt(System.console().readLine());
+    
+    for(int i=0;i<100;i++){
+      
+      if(n[i]==valor1){
+        n[i]=valor2;
+        System.out.print(" " + "\""+ n[i]+"\""+" ");
+      }else{
+        System.out.print(n[i]+" ");
+        }
+      
+  }
+  
 	}
 }
 

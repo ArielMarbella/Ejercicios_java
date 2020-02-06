@@ -9,7 +9,23 @@ máximo y del mínimo respectivamente.
 public class Tema07Ejer05 {
 	
 	public static void main (String args[]) {
-		System.out.println("introduce 10 números por teclado y luego mostraremos los máximos y los mínimos");
+    
+    System.out.println("introduce 10 números por teclado y luego mostraremos los máximos y los mínimos");
+    int[]num=new int[10];
+    int max=0;
+    int min=1000;
+    
+    for(int i=0;i<10;i++){
+      num[i]=Integer.parseInt(System.console().readLine());
+      if(num[i]>max){
+        max=num[i];
+      }
+      if(num[i]<min){
+          min=num[i];
+      }
+    }
+    System.out.printf("el número máximo es: %2d\nY el minimo es: %2d",max,min );
+		/*System.out.println("introduce 10 números por teclado y luego mostraremos los máximos y los mínimos");
     
     int [] num= new int[10];
     int min;
@@ -31,7 +47,7 @@ public class Tema07Ejer05 {
         System.out.print(max);
       }
     }
-    
+    */
       
     
     

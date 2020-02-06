@@ -1,24 +1,88 @@
-/*
- * 11. Realiza un programa que pida 10 números por teclado y que los almacene en un array.
-* A continuación se mostrará el contenido de ese array junto al índice (0 – 9).
-* Seguidamente el programa pasará los primos a las primeras posiciones, desplazando
-* el resto de números (los que no son primos) de tal forma que no se pierda ninguno.
-* Al final se debe mostrar el array resultante.
- * 
- */
-
-
+/*12.
+  Realiza un programa que pida 10 números por teclado y que los almacene en
+  un array. A continuación se mostrará el contenido de ese array junto al índice
+  (0 – 9). Seguidamente el programa pedirá dos posiciones a las que llamaremos
+  “inicial” y “final”. Se debe comprobar que inicial es menor que final y que ambos
+  números están entre 0 y 9. El programa deberá colocar el número de la posición
+  inicial en la posición final, rotando el resto de números para que no se pierda
+  ninguno. Al final se debe mostrar el array resultante.
+*/
 public class Tema07Ejer12 {
 	
 	public static void main (String args[]) {
 		
-	    int[] num = new int[10];
+    int[]num=new int[10];
+    int[]num2=new int[10];
+    int inicial;
+    int fin;
+    int con=1;
+ 
+    
+    for(int i =0;i<10;i++){
+       num[i]=Integer.parseInt(System.console().readLine());
+       num2[i]=num[i];
+    }
+    for(int i=0;i<10;i++){
+      System.out.printf("%4d  |",i);
+    }
+    System.out.println();
+    for(int i=0;i<10;i++){
+      System.out.printf("%4d  |",num[i]);
+    }
+    System.out.print("elige posicion inicial");
+    inicial=Integer.parseInt(System.console().readLine());
+    
+       while(inicial>9||inicial<0){
+           System.out.print("mal,repite");
+           inicial=Integer.parseInt(System.console().readLine());
+      }
+    
+    System.out.print("elige posición final");
+    fin=Integer.parseInt(System.console().readLine());
+  
+         
+    while(inicial>fin||fin>9||fin<0){
+           System.out.print("mal,repite");
+           fin=Integer.parseInt(System.console().readLine());
+      }
+      
+    for(int j=0;j<4;j++){
+      num[0]=num[9];
+      for(int i=0;i<9;i++){
+        
+        num[i+1]=num2[i];
+      }
+    }
+
+    for(int i=0;i<10;i++){
+      System.out.printf("%4d  |",i);
+    }
+    System.out.println();
+    for(int i=0;i<10;i++){
+      System.out.printf("%4d  |",num[i]);
+    }
+
+      /* while(salir==false){
+      if(inicio>fin){
+         System.out.print("mal,repite");
+         fin=Integer.parseInt(System.console().readLine());
+      }else{
+        salir=true;
+      }
+    
+   
+    }*/
+    
+    
+    /*
+    
+    int[] num = new int[10];
     int[] aux = new int[2];
     int i;
     int auxI;
     int auxF;
     
-    // Pedimos los valores que formaran el array
+    //Pedimos los valores que formaran el array
     System.out.println("Introduce 10 números por teclado: ");
     for (i = 0; i < 10; i++) {
       num[i] = Integer.parseInt(System.console().readLine());
@@ -27,6 +91,7 @@ public class Tema07Ejer12 {
     // Imprime array inicial
     System.out.println("Array inicial: ");
     System.out.print("Indice: ");
+   
     for (i = 0; i < 10; i++) {
       System.out.printf("%5d", i);
     }
@@ -85,6 +150,6 @@ public class Tema07Ejer12 {
     System.out.print("\nValor:  ");
     for (i = 0; i < 10; i++) {
       System.out.printf("%5d", num[i]);
-    }
+    }*/
   } 
 }

@@ -11,7 +11,19 @@ public class Tema07Ejer06 {
 	
 	public static void main (String args[]) {
     
-    System.out.println("introduce 15 números y cambiaremos su posición");
+    System.out.println("Introduce 15 números y cambiaremos la posición");
+    int[]n=new int[15];
+    
+    for(int i=0;i<15;i++){
+      n[i]=Integer.parseInt(System.console().readLine());
+    }
+    System.out.println();
+    System.out.print(" "+n[14]);
+    for(int i=1;i<15;i++){
+      System.out.print(" "+n[i-1]);
+    }
+    
+   /* System.out.println("introduce 15 números y cambiaremos su posición");
     
     int[]n=new int[15];
     
@@ -23,7 +35,7 @@ public class Tema07Ejer06 {
     for(int i=1;i<15;i++){
       System.out.print(" " + n[i-1]);
       
-    }
+    }*/
     
 		
 	}

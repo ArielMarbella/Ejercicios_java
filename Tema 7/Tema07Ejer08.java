@@ -11,6 +11,9 @@ public class Tema07Ejer08 {
 	
 	public static void main (String args[]) {
     
+   /* string[]mes={"Ener";"feb";"mar";"abr";"may";"jun";"jul";"ago";"sep";"oct";"nov";"dic"};*/
+    
+    
     String[]mes={"Enero","Febrero","Marzo","Abril","mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
 		int[] temperatura=new int[12];
     int i,j;
@@ -19,7 +22,14 @@ public class Tema07Ejer08 {
       System.out.println("Introduce la temperatura media del mes: "+mes[i]+":");
       temperatura[i]=Integer.parseInt(System.console().readLine());
     }
-    
-	}
+    for (i = 0; i < 12; i++) {
+    System.out.printf("%9s"+"|",mes[i]);
+      for (j = 0; j < temperatura[i]; j++) {
+      System.out.print("*");
+      }
+      
+    System.out.println(temperatura[i] + "ºC");
+	  }
+  }
 }
 
